@@ -26,12 +26,13 @@
   <main class="contato">
     <h1>Formulario de contato</h1>
 
-    <form action="">
-      <label for="nomesobrenome">Nome Completo</label>
-      <input type="text" id="nomesobrenome" class="input-padrao">
+    <form action="">      
+
+      <label for="nome-completo">Digite seu nome completo</label>
+      <input type="text" name="" id="nome-completo">
 
       <label for="email">Email</label>
-      <input type="text" id="email" class="input-padrao">
+      <input type="email" id="email" class="input-padrao">
 
       <label for="telefone">Telefone</label>
       <input type="text" id="telefone" class="input-padrao">
@@ -43,9 +44,13 @@
       <!-- Botão Radio -->
       <div class="tipo-contato">
         <p>O prefere o nosso contato ?</p>
-        <label for="radio-email"><input type="radio" name="contato" id="radio-email">Email</label>
+        <label for="radio-email">
+          <input type="radio" name="contato" id="radio-email">
+          Email
+        </label>
         <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Telefone</label>
         <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp">Whatsapp</label>
+        <label for="radio-tiktok"><input type="radio" name="contato" id="radio-tiktok">Tiktok</label>
       </div>
 
 
@@ -53,6 +58,9 @@
         <input type="checkbox" name="" id="checkbox">
         Gostaria de receber nossas novidades por email?
       </label>
+      <input type="checkbox" name="" id="checkbox">
+      Gostaria de receber nossas novidades por email?
+    </label>
 
       <input type="submit" value="Enviar Formulario" class="input-padrao">
 
