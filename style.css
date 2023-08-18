@@ -1,6 +1,16 @@
-body {
-  font-family: 'Poppins', sans-serif;
+:root {
+  --font-principal: 'Poppins', sans-serif;
+  --font-detalhes: 'Roboto', sans-serif;
+
+  --cor-de-fundo-padrao: white;
+  --cor-de-fundo-escuro: #000;
+  --cor-de-fundo-lgbt: pink;
 }
+
+body {
+  font-family: var(--font-principal);
+}
+
 header {
   background: #BBBBBB;
   padding: 20px 0;
@@ -50,7 +60,7 @@ nav a:hover {
   width: 30%;
   text-align: center;
   vertical-align: top;
-  border: 3px solid #000;  
+  border: 3px solid #000;
   box-sizing: border-box;
   padding: 30px 20px;
   margin: 0 1.5%;
@@ -63,13 +73,14 @@ nav a:hover {
   border-width: 4px;
 }
 
-.produtos li:hover .produto-preco{
+.produtos li:hover .produto-preco {
   color: red;
 }
 
 .produtos li:active {
   border-color: green;
 }
+
 .produtos h2 {
   font-size: 30px;
   font-weight: bold;
@@ -87,13 +98,13 @@ nav a:hover {
 
 footer {
   background-color: #000;
-  color: white; 
-  padding: 20px 0; 
+  color: white;
+  padding: 20px 0;
 }
 
 .footer-logo {
   display: inline-block;
-  width: 75%;  
+  width: 75%;
 }
 
 .footer-logo p {
@@ -105,7 +116,7 @@ footer {
   vertical-align: top;
   border: 2px solid white;
   border-radius: 12px;
-  margin-top: 50px;  
+  margin-top: 50px;
   padding: 20px 15px;
 }
 
@@ -115,7 +126,7 @@ footer {
 
 main {
   width: 940px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 /* Contato.html */
@@ -124,7 +135,8 @@ form {
   margin: 40px 0;
 }
 
-form label, legend {
+form label,
+legend {
   font-size: 20px;
   margin: 0 0 10px;
 }
@@ -176,10 +188,11 @@ table {
 thead {
   background-color: #555555;
   color: white;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #000;
   padding: 8px 15px;
 }
@@ -207,7 +220,7 @@ td, th {
   margin: 0 0 1em;
 }
 
-.principal strong{
+.principal strong {
   font-weight: bold;
 }
 
@@ -222,7 +235,7 @@ td, th {
 
 .conteudo-beneficio {
   width: 640px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 .lista-beneficio {
@@ -244,7 +257,7 @@ td, th {
 }
 
 .itens:last-child {
-  color:green
+  color: green
 }
 
 .itens:nth-child(3) {
@@ -258,6 +271,8 @@ td, th {
 .mapa {
   padding: 3em 0;
   background: linear-gradient(#FEFEFE, #888888);
+  /* background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(210,132,255,1) 100%); */
 }
 
 .mapa-conteudo {
@@ -273,7 +288,7 @@ td, th {
 .utensilios {
   width: 120px;
   float: left;
-  margin: 0 20px 20px 0;  
+  margin: 0 20px 20px 0;
 }
 
 .video {
@@ -283,4 +298,14 @@ td, th {
 
 .contatoo {
   margin: 20px 90px;
+}
+
+/* Adiciona um texto ANTES do elemento */
+.titulo-principal::before {
+  content: "[\1F7CA "
+}
+
+/* Adiciona um texto DEPOIS do elemento */
+.titulo-principal::after{
+  content: "\273F" 
 }
